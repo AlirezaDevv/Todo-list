@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Todo-List</title>
+  </head>
+  <body>
+    <section class="w-full h-screen flex justify-center items-center">
+      <div class="todo bg-slate-100 py-6 px-14 rounded-xl">
+        <div class="flex items-center mb-14">
+          <span class="text-3xl font-semibold">To-Do List </span>
+          <img class="w-8 ml-5" src="./images/icon.png" alt="" />
+        </div>
+
+        <div
+          class="Toinput flex items-center justify-between rounded-full mb-7 bg-gray-200"
+        >
+          <input
+            type="text"
+            class="flex-1 bg-gray-200 pl-5"
+            id="input-box"
+            placeholder="Add your text.."
+          />
+          <button
+            onclick="addTask()"
+            class="btn px-8 py-4 text-2xl text-white bg-orange-500 rounded-full"
+          >
+            Add
+          </button>
+        </div>
+
+        <ul id="list-container"></ul>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
